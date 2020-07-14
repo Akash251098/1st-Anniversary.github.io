@@ -1,0 +1,55 @@
+body, html {
+  height: 100%;
+  margin: 0;
+
+  font-family:calibri, Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+
+  background-image: url("IMG-20200422-WA0012.jpg");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  height: 100%;
+  width:100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.header {
+     background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color:#85fff1;
+  font-weight: bold;
+  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+font-size:1.5vw;
+  
+}
+
+a{
+text-decoration:none;
+color:yellow;
+font-size:3vw;
+position: absolute;
+  top: 75%;
+  left: 45%;
+}
+a:hover{
+color:white;
+font-size:4vw;
+}
+

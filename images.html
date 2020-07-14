@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anniversary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="begum1.css">
+<style>
+body {
+  margin: 0;
+  font-family:calibri, Arial, Helvetica, sans-serif;
+background-color:powderblue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}	
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="images.html">Images</a>
+  <a href="video.html">Videos</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+
+<div class="header">
+  <h1>My Love</h1>
+  <p>I Love You.</p>
+</div>
+  
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+
+    <img src="IMG-20200422-WA0012.jpg" style="width:100%">
+    <img src="IMG_20190904_122439.jpg" style="width:100%">
+    <img src="IMG_20190904_122442.jpg" style="width:100%">
+    <img src="MojiPop_20200412125028_00401000801550.jpg" style="width:100%">
+    <img src="IMG_20190717_163857.jpg" style="width:100%">
+    <img src="IMG-20200518-WA0001.jpg" style="width:100%">
+    <img src="IMG-20191003-WA0067.jpg" style="width:100%">
+    <img src="IMG_20200619_114117.jpg" style="width:100%"> 
+    <img src="IMG-20200324-WA0019.jpg" style="width:100%"> 
+    <img src="IMG-20200403-WA0009.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="IMG-20200328-WA0027.jpg" style="width:100%">
+    <img src="IMG-20191003-WA0026.jpg" style="width:100%">
+    <img src="IMG-20200410-WA0010.jpg" style="width:100%">
+    <img src="IMG_20190717_164002.jpg" style="width:100%">
+    <img src="IMG-20191002-WA0007.jpg" style="width:100%">
+    <img src="IMG-20191008-WA0006.jpg" style="width:100%">
+    <img src="IMG_20190717_164520.jpg" style="width:100%">
+<img src="IMG-20191103-WA0015.jpg" style="width:100%">
+    <img src="IMG_20190717_164932.jpg" style="width:100%">
+<img src="IMG-20200422-WA0009.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="MojiPop_20200412125007_00401002107030.jpg" style="width:100%">
+    <img src="IMG_20190717_164712.jpg" style="width:100%">
+    <img src="IMG-20200518-WA0000.jpg" style="width:100%">
+    <img src="IMG_20190717_164757.jpg" style="width:100%">
+    <img src="IMG-20191230-WA0009.jpg" style="width:100%">
+    <img src="IMG-20200712-WA0008.jpg" style="width:100%">
+    <img src="IMG_20190814_140200.jpg" style="width:100%">
+    <img src="MojiPop_20200412124822_00401000700830.jpg" style="width:100%">
+<img src="IMG_20191028_125158.jpg" style="width:100%">
+    <img src="IMG-20200712-WA0010.jpg" style="width:100%">
+<img src="Screenshot_2019-11-18-17-19-32-683_com.whatsapp.png" style="width:100%">
+  </div>
+ <div class="column">
+    <img src="IMG-20191103-WA0020.jpg" style="width:100%">
+    <img src="IMG-20200304-WA0015.jpg" style="width:100%">
+    <img src="MojiPop_20200412125013_00401000810400.jpg" style="width:100%">
+    <img src="02e61cf973f6476198e490069c3c6e08.jpg" style="width:100%">
+    <img src="IMG_20190717_163402.jpg" style="width:100%">
+    <img src="IMG_20190717_163747.jpg" style="width:100%">
+<img src="IMG-20200215-WA0013.jpg" style="width:100%">
+    <img src="IMG-20200708-WA0028.jpg" style="width:100%">
+    <img src="61af6449f0704b31b3e868be8849ceaf.jpg" style="width:100%">
+  </div>  
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
